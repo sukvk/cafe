@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Garamond ', sans-serif;
+}
+
+h2 {
+    color: rgba(122, 60, 16, );
+}
+
+a,
+a link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.header-logo {
+    color: rgb(122, 60, 16);
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid;
+    border-radius: 35px;
+    padding-bottom: 5px;
+
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 27px;
+}
+
+a {
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-text {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.80;
+    letter-spacing: 2px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #745b37;
+}
+
+.first-letter {
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #745b37;
+}
+
+.btn-coffee {
+    display: block;
+    background-color: #745b37;
+    color: #fff;
+    padding: 10px 25px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-coffee::after {
+    content: "Satın Al";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #5b2a02;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.btn-coffee:hover::after {
+    top: 0%;
+}
+
+/* HAKKIMIZDA */
+
+.hakkımızda {
+    margin-bottom: 150px;
+}
+
+.hakkımızda-tittle {
+    margin: 60px 0;
+}
+
+.hakkımızda-tittle h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hakkımızda-tittle h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.hakkımızda-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hakkımızda-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hakkımızda-text {
+    width: 40%;
+}
+
+h4 {
+    margin-bottom: center;
+    text-align: center;
+    font-size: 30px;
+    color: #745b37;
+    font-family: 'Karabatak', serif;
+    letter-spacing: 0.1rem;
+}
+
+#asteriks {
+    color: #745b37;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 15px;
+    text-align: center;
+    color: #2c2727;
+}
+
+/*PORTFOLİO*/
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: 1s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #5b2a02;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.portfolio-item:hover .overlay {
+    top: 0;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/*İLETİŞİM*/
+
+.iletişim {
+    padding: 60px 0;
+}
+
+.iletişim h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.iletişim h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.iletişim-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iletişim-item {
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.iletişim-item i {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #5b2a02;
+}
+
+.iletişim-item p {
+    font-size: 14px;
+    line-height: 33px;
+}
+
